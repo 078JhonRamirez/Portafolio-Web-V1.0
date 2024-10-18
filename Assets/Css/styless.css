@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+    padding: .8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+        font-size: 1.2rem;
+        color: cadetblue;
+    }
+
+    .nav{
+        display: flex;
+        gap: 1rem;
+
+        .nav__hre{
+            text-decoration: none;
+            color: darkblue;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.banner{
+    position: relative;
+    width: 95vw;
+    margin: 1rem auto 1rem auto;
+    padding: .5em;
+    
+    .banner__container{
+        padding: 1rem;
+        height: min-content;
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        .subtitle{
+            color: brown;
+            max-width: 70%;
+        }
+
+        .informacion{
+            padding-top: 1.5rem;
+            font-size: .9rem;
+            max-width: 80%;
+            color: gray;
+        }
+    }
+
+    .banner__container div:first-child {
+        width: 70%;
+        height: min-content;
+        padding: 1rem;
+        /* outline: 12px solid red; */
+    }
+
+
+    .imagen__circular{
+        max-width: 280px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .nav__Redes-Sociales{
+        position: relative;
+        left: 70px;
+        
+        a{
+            text-decoration: none;
+            color: brown;
+        }
+    }
+}
+
+.main{
+    padding: 1rem;
+    margin-left: 2.5rem;
+
+    .subtitle_sobre-mi{
+        color: brown;
+        margin-bottom: 10px;
+    }
+    
+    .informacion__sobre__mi{
+        color: darkolivegreen;
+        max-width: 70%;
+        text-align: justify;
+        margin: 10px;
+    }
+}
+
+.title__general{
+    text-align: center;
+    color: brown;
+    margin-bottom: 10px;
+}
+.container{
+    padding: 1em;
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .card__tecnologi{
+        width: 200px;
+        height: 150px;
+        padding: .4rem;
+        background-color: rgba(128, 128, 128, 0.43);
+        position: relative;
+
+        .card__icon{
+            position: absolute;
+            right: 3px;
+            top: 70px;
+        }
+
+        .card__text{
+            position: absolute;
+            bottom: 12px;
+            right: 3px;
+        }
+
+
+    }
+}
+
+
+.contactame{
+    max-width: 80%;
+    height: max-content;
+    padding: 1rem;
+
+    .container__img{
+        max-width: 400px;
+        height: 500px;
+
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .container__contactame{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        form{
+            position: relative;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+
+            label{
+                width: 100%;
+                height: 30px;
+                margin: 8px;
+
+                input{
+                    width: 90%;
+                    height: 55%;
+                    padding: 0.5rem;
+                    color: rgb(4, 4, 98);
+                    background-color: rgba(128, 128, 128, 0.51);
+                    border: none;
+                    border-radius: 5px;
+                }
+
+            }
+        }
+
+        textarea{
+            width: 100%;
+            height: 100px;
+            resize: none;
+        }
+
+        button{
+            background-color: aqua;
+            width: 200px;
+            padding: .8rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: darkblue;
+        }
+
+
+    }
+
+}
+
+footer{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 1rem 0;
+}
